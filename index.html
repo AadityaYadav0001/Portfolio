@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaditya Yadav | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style-bootstrap.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3" data-aos="fade-down" data-aos-duration="800">
+    <a class="navbar-brand" href="#">Aaditya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><button id="toggle-dark" class="btn btn-outline-light btn-sm ms-3">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="bg-primary text-white text-center py-5" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="container">
+      <h2>Hello, I'm Aaditya</h2>
+      <p class="lead">Aspiring Full Stack Developer |  | Final Year BTech Student</p>
+      <img src="photo.png" alt="Profile" class="rounded-circle mt-3" data-aos="fade-up" data-aos-delay="150" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5" data-aos="fade-up" data-aos-duration="800">
+    <h2>About Me</h2>
+    <p>I’m passionate about creating intuitive and dynamic user interfaces. I enjoy solving problems with code and building useful applications, like my recent project on House Price Prediction using ML and Flask.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container py-5" data-aos="fade-up" data-aos-duration="800">
+    <h2>Skills</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" data-aos="fade-left" data-aos-delay="100">HTML, CSS, JavaScript</li>
+      <li class="list-group-item" data-aos="fade-left" data-aos-delay="200">Bootstrap, Angular (learning)</li>
+      <li class="list-group-item" data-aos="fade-left" data-aos-delay="400">SQL, .NET, PYTHON</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container py-5" data-aos="fade-up" data-aos-duration="800">
+    <h2>Projects</h2>
+    <div class="card mb-3" data-aos="fade-right" data-aos-duration="800">
+      <div class="card-body">
+        <h5 class="card-title">House Price Prediction Website</h5>
+        <p class="card-text">Built with Flask backend for better prediction of price.</p>
+        <a href="https://github.com/AadityaYadav0001/House-Price-Prediction.git" target="_blank" class="btn btn-outline-primary mt-2">View Project</a>
+      </div>
+    </div>
+    <div class="card" data-aos="fade-left" data-aos-duration="800">
+      <div class="card-body">
+        <h5 class="card-title">Frontend Roadmap Blog</h5>
+        <p class="card-text">Tutorial site to help beginners learn web dev in 5 months</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5" data-aos="fade-up" data-aos-duration="800">
+    <h2>Contact Me</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Your Email" required />
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+    <div class="mt-4">
+      <h3>Download My Resume</h3>
+      <a href="resume.pdf" download class="btn btn-outline-primary" data-aos="zoom-in" data-aos-delay="200">Download PDF</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3" data-aos="fade-up" data-aos-duration="800">
+    <p>&copy; 2025 Aaditya Yadav</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  </script>
+  <!-- Custom JS -->
+  <script src="script-bootstrap.js"></script>
+</body>
+</html>
