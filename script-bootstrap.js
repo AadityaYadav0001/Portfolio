@@ -46,3 +46,26 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const profileImg = document.querySelector(".profile-img");
+
+  profileImg.addEventListener("click", () => {
+    // Create overlay
+    const overlay = document.createElement("div");
+    overlay.classList.add("pop-overlay");
+    document.body.appendChild(overlay);
+
+    // Add pop-out class
+    profileImg.classList.add("pop-out");
+
+    // Close on overlay click
+    overlay.addEventListener("click", () => {
+      profileImg.classList.remove("pop-out");
+      overlay.remove();
+    });
+  });
+});
+
+
+
